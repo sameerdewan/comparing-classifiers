@@ -55,7 +55,6 @@ comparing-classifiers/
 │   └── *.csv                       # Model results
 ├── visualizations/                 # Generated plots
 ├── prompt_III.ipynb               # Main Jupyter notebook
-├── solution.py                    # Complete solution script
 ├── explore_data.py                # Generic data exploration tool
 ├── data_profile.txt               # Data profile output
 ├── CRISP-DM-BANK.pdf             # Research paper
@@ -69,12 +68,7 @@ comparing-classifiers/
 pip install pandas numpy matplotlib seaborn scikit-learn
 ```
 
-2. Run the solution script:
-```bash
-python solution.py
-```
-
-3. Or open the Jupyter notebook:
+2. Open the Jupyter notebook:
 ```bash
 jupyter notebook prompt_III.ipynb
 ```

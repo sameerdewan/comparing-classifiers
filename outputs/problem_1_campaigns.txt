@@ -1,0 +1,30 @@
+PROBLEM 1: Understanding the Data
+=====================================
+
+QUESTION: How many marketing campaigns does this data represent?
+
+DATA-DERIVED FINDINGS:
+- Total contacts in dataset: 41,188
+- Unique months in data: 10
+- Months present: ['apr', 'aug', 'dec', 'jul', 'jun', 'mar', 'may', 'nov', 'oct', 'sep']
+
+MONTH DISTRIBUTION:
+month
+may    13769
+jul     7174
+aug     6178
+jun     5318
+nov     4101
+apr     2632
+oct      718
+sep      570
+mar      546
+dec      182
+
+EXTERNAL SOURCE (CRISP-DM-BANK.pdf):
+- The paper states: 17 campaigns conducted
+- Timeframe: May 2008 to November 2010 (~2.5 years)
+- 10 unique months in data across 41,188 contacts
+- Average contacts per campaign: 2,423
+
+ANSWER: 17 marketing campaigns (from paper documentation)

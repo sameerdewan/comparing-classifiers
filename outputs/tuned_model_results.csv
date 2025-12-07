@@ -1,0 +1,5 @@
+Model,Best Params,CV Score,Test Accuracy,Test F1,Tune Time (s)
+Logistic Regression,"{'C': 0.1, 'solver': 'liblinear'}",0.3376,0.9008,0.332,2.14
+KNN,"{'n_neighbors': 5, 'weights': 'uniform'}",0.3644,0.894,0.3751,4.64
+Decision Tree,"{'max_depth': 10, 'min_samples_split': 2}",0.368,0.8989,0.3986,3.86
+SVM,"{'C': 1.0, 'kernel': 'rbf'}",0.3367,0.9037,0.3711,18.88

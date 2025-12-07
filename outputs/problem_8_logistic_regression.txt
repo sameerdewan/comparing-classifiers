@@ -1,0 +1,13 @@
+PROBLEM 8: A Simple Model - Logistic Regression
+=====================================
+
+CODE:
+    lr = LogisticRegression(max_iter=1000, random_state=42)
+    lr.fit(X_train, y_train)
+
+TRAINING RESULTS:
+- Training time: 0.0383 seconds
+- Iterations to converge: 69
+- Converged: Yes
+- Number of features used: 52
+- Regularization strength (C): 1.0

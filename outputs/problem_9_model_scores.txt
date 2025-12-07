@@ -1,0 +1,50 @@
+PROBLEM 9: Score the Model
+=====================================
+
+ACCURACY:
+- Training: 0.8998
+- Test: 0.9014
+- Baseline: 0.8874
+- Improvement: +1.41%
+
+ALL METRICS (Test Set):
+- Precision: 0.6933
+- Recall: 0.2241
+- F1-score: 0.3388
+- ROC-AUC: 0.8007
+
+CONFUSION MATRIX:
+              Predicted
+              No      Yes
+Actual No     7218      92
+Actual Yes     720     208
+
+CONFUSION MATRIX INTERPRETATION:
+- True Negatives (correctly rejected): 7218
+- False Positives (false alarms): 92
+- False Negatives (missed opportunities): 720
+- True Positives (correctly identified): 208
+
+DATA-DERIVED OBSERVATIONS:
+- Accuracy improvement over baseline: +1.41%
+- No overfitting detected: Train-Test gap = -0.16%
+- LOW RECALL (0.22): Missing 720 of 928 actual positives
+
+TOP 10 FEATURES (by coefficient magnitude):
+          feature  coefficient
+     emp.var.rate    -2.257415
+        month_mar     1.436583
+   cons.price.idx     1.175823
+contact_telephone    -0.728919
+ poutcome_success     0.668895
+        month_jun    -0.651908
+      nr.employed     0.470097
+        month_dec     0.464200
+        month_aug     0.455763
+        month_nov    -0.453819
+
+COEFFICIENT MEANING:
+- Positive = increases subscription probability
+- Negative = decreases subscription probability
+- Top positive: month_mar (1.4366)
+- Top negative: emp.var.rate (-2.2574)

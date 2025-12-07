@@ -1,0 +1,31 @@
+PROBLEM 5: Engineering Features
+=====================================
+
+STEP 1 - DROP DURATION:
+- Column 'duration' present: True
+- Reason: Duration not known before call (data leakage)
+- Duration by target: y
+no     220.844807
+yes    553.191164
+
+STEP 2 - ENCODE TARGET:
+- Original values: ['no', 'yes']
+- Encoding: 'yes' -> 1, 'no' -> 0
+
+STEP 3 - COLUMN TYPES IDENTIFIED:
+- Numeric (9): ['age', 'campaign', 'pdays', 'previous', 'emp.var.rate', 'cons.price.idx', 'cons.conf.idx', 'euribor3m', 'nr.employed']
+- Categorical (10): ['job', 'marital', 'education', 'default', 'housing', 'loan', 'contact', 'month', 'day_of_week', 'poutcome']
+
+STEP 4 - ONE-HOT ENCODING:
+- Features before: 19
+- Features after: 52
+- New features created: 33
+
+STEP 5 - SCALING:
+- Applied StandardScaler to 9 numeric columns
+- Transforms to mean=0, std=1
+
+FINAL SHAPES:
+- X: (41188, 52)
+- y: (41188,)
+- y distribution: 0=36548, 1=4640

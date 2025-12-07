@@ -1,0 +1,45 @@
+PROBLEM 2: Read in the Data
+=====================================
+
+CODE:
+    df = pd.read_csv('data/bank-additional-full.csv', sep=';')
+
+DATA SHAPE:
+- Rows: 41,188
+- Columns: 21
+- Memory: 33.72 MB
+
+COLUMN TYPES FOUND:
+- Numeric columns (10): ['age', 'duration', 'campaign', 'pdays', 'previous', 'emp.var.rate', 'cons.price.idx', 'cons.conf.idx', 'euribor3m', 'nr.employed']
+- Categorical columns (11): ['job', 'marital', 'education', 'default', 'housing', 'loan', 'contact', 'month', 'day_of_week', 'poutcome', 'y']
+
+ALL COLUMNS:
+  1. age (int64)
+  2. job (object)
+  3. marital (object)
+  4. education (object)
+  5. default (object)
+  6. housing (object)
+  7. loan (object)
+  8. contact (object)
+  9. month (object)
+  10. day_of_week (object)
+  11. duration (int64)
+  12. campaign (int64)
+  13. pdays (int64)
+  14. previous (int64)
+  15. poutcome (object)
+  16. emp.var.rate (float64)
+  17. cons.price.idx (float64)
+  18. cons.conf.idx (float64)
+  19. euribor3m (float64)
+  20. nr.employed (float64)
+  21. y (object)
+
+SAMPLE DATA (first 3 rows):
+   age        job  marital    education  default housing loan    contact month day_of_week  duration  campaign  pdays  previous     poutcome  emp.var.rate  cons.price.idx  cons.conf.idx  euribor3m  nr.employed   y
+0   56  housemaid  married     basic.4y       no      no   no  telephone   may         mon       261         1    999         0  nonexistent           1.1          93.994          -36.4      4.857       5191.0  no
+1   57   services  married  high.school  unknown      no   no  telephone   may         mon       149         1    999         0  nonexistent           1.1          93.994          -36.4      4.857       5191.0  no
+2   37   services  married  high.school       no     yes   no  telephone   may         mon       226         1    999         0  nonexistent           1.1          93.994          -36.4      4.857       5191.0  no
+
+PATH NOTE: Correct path is 'data/bank-additional-full.csv'

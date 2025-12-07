@@ -1,0 +1,32 @@
+PROBLEM 4: Understanding the Task - Business Objective
+=====================================
+
+TARGET VARIABLE: 'y'
+- Values: ['no', 'yes']
+- This represents: whether client subscribed to term deposit
+
+TARGET DISTRIBUTION:
+y
+no     36548
+yes     4640
+
+y
+no     88.73
+yes    11.27
+
+CLASS ANALYSIS:
+- Majority class: 'no' (88.73%)
+- Minority class: 'yes' (11.27%)
+- Imbalance ratio: 7.9:1
+
+DATA-DERIVED OBSERVATIONS:
+- SEVERE imbalance detected: 7.9:1 ratio
+- Accuracy will be misleading - a model predicting all 'no' gets 88.7% accuracy
+- Must use metrics like F1, precision, recall for minority class
+
+BUSINESS OBJECTIVE:
+Predict whether a client will subscribe to a term deposit (y='yes')
+based on client demographics, campaign data, and economic indicators.
+
+METRIC RECOMMENDATION (based on 7.9:1 imbalance):
+F1-score or ROC-AUC (accuracy misleading due to imbalance)

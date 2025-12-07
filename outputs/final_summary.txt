@@ -1,0 +1,39 @@
+FINAL SUMMARY
+=====================================
+All values below are derived from actual data analysis.
+
+DATA:
+- Samples: 41,188
+- Features: 21
+- Target: 'y' (yes/no)
+- Imbalance: 7.9:1
+
+BASELINE: 0.8874 (always predict majority class)
+
+LOGISTIC REGRESSION:
+- Test Accuracy: 0.9014
+- Test F1: 0.3388
+- Improvement vs baseline: +1.41%
+
+MODEL COMPARISON (defaults):
+              Model  Test Accuracy  Overfit Gap  vs Baseline
+Logistic Regression         0.9014      -0.0016       0.0141
+                KNN         0.8940       0.0194       0.0067
+      Decision Tree         0.8412       0.1542      -0.0461
+                SVM         0.9037       0.0011       0.0164
+
+TUNED MODELS:
+              Model  Test Accuracy  Test F1
+Logistic Regression         0.9008   0.3320
+                KNN         0.8940   0.3751
+      Decision Tree         0.8989   0.3986
+                SVM         0.9037   0.3711
+
+BEST MODEL: Decision Tree
+
+TOP FEATURES:
+- emp.var.rate: -2.2574
+- month_mar: 1.4366
+- cons.price.idx: 1.1758
+- contact_telephone: -0.7289
+- poutcome_success: 0.6689

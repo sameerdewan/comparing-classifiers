@@ -1,0 +1,440 @@
+<frozen importlib._bootstrap>:488: RuntimeWarning: The global interpreter lock (GIL) has been enabled to load module 'pandas._libs.pandas_parser', which has not declared that it can run safely without the GIL. To override this behavior and keep the GIL disabled (at your own risk), run with PYTHON_GIL=0 or -Xgil=0.
+Auto-detected separator: ';'
+Loading data from: data/bank-additional-full.csv
+
+================================================================================
+ 1. BASIC INFORMATION
+================================================================================
+
+File: data/bank-additional-full.csv
+Separator: ';'
+Shape: 41188 rows × 21 columns
+Memory usage: 33.72 MB
+
+Column names (21):
+   1. age
+   2. job
+   3. marital
+   4. education
+   5. default
+   6. housing
+   7. loan
+   8. contact
+   9. month
+  10. day_of_week
+  11. duration
+  12. campaign
+  13. pdays
+  14. previous
+  15. poutcome
+  16. emp.var.rate
+  17. cons.price.idx
+  18. cons.conf.idx
+  19. euribor3m
+  20. nr.employed
+  21. y
+
+================================================================================
+ 2. DATA TYPES
+================================================================================
+
+Data type summary:
+  object: 11 columns
+  int64: 5 columns
+  float64: 5 columns
+
+Column data types:
+  age: int64
+  job: object
+  marital: object
+  education: object
+  default: object
+  housing: object
+  loan: object
+  contact: object
+  month: object
+  day_of_week: object
+  duration: int64
+  campaign: int64
+  pdays: int64
+  previous: int64
+  poutcome: object
+  emp.var.rate: float64
+  cons.price.idx: float64
+  cons.conf.idx: float64
+  euribor3m: float64
+  nr.employed: float64
+  y: object
+
+Numeric columns (10): ['age', 'duration', 'campaign', 'pdays', 'previous', 'emp.var.rate', 'cons.price.idx', 'cons.conf.idx', 'euribor3m', 'nr.employed']
+Categorical columns (11): ['job', 'marital', 'education', 'default', 'housing', 'loan', 'contact', 'month', 'day_of_week', 'poutcome', 'y']
+
+================================================================================
+ 3. MISSING VALUES ANALYSIS
+================================================================================
+
+Total null values: 0
+No standard null values found.
+
+Placeholder value detection (potential missing data):
+
+  job:
+    'unknown': 330 (0.80%)
+
+  marital:
+    'unknown': 80 (0.19%)
+
+  education:
+    'unknown': 1731 (4.20%)
+
+  default:
+    'unknown': 8597 (20.87%)
+
+  housing:
+    'unknown': 990 (2.40%)
+
+  loan:
+    'unknown': 990 (2.40%)
+
+================================================================================
+ 4. NUMERIC COLUMN STATISTICS
+================================================================================
+
+
+age:
+  Count: 41188, Nulls: 0 (0.00%)
+  Mean: 40.0241, Std: 10.4212
+  Min: 17.0000, Max: 98.0000
+  Quartiles: Q25=32.0000, Median=38.0000, Q75=47.0000
+
+duration:
+  Count: 41188, Nulls: 0 (0.00%)
+  Mean: 258.2850, Std: 259.2792
+  Min: 0.0000, Max: 4918.0000
+  Quartiles: Q25=102.0000, Median=180.0000, Q75=319.0000
+
+campaign:
+  Count: 41188, Nulls: 0 (0.00%)
+  Mean: 2.5676, Std: 2.7700
+  Min: 1.0000, Max: 56.0000
+  Quartiles: Q25=1.0000, Median=2.0000, Q75=3.0000
+
+pdays:
+  Count: 41188, Nulls: 0 (0.00%)
+  Mean: 962.4755, Std: 186.9109
+  Min: 0.0000, Max: 999.0000
+  Quartiles: Q25=999.0000, Median=999.0000, Q75=999.0000
+
+previous:
+  Count: 41188, Nulls: 0 (0.00%)
+  Mean: 0.1730, Std: 0.4949
+  Min: 0.0000, Max: 7.0000
+  Quartiles: Q25=0.0000, Median=0.0000, Q75=0.0000
+
+emp.var.rate:
+  Count: 41188, Nulls: 0 (0.00%)
+  Mean: 0.0819, Std: 1.5710
+  Min: -3.4000, Max: 1.4000
+  Quartiles: Q25=-1.8000, Median=1.1000, Q75=1.4000
+
+cons.price.idx:
+  Count: 41188, Nulls: 0 (0.00%)
+  Mean: 93.5757, Std: 0.5788
+  Min: 92.2010, Max: 94.7670
+  Quartiles: Q25=93.0750, Median=93.7490, Q75=93.9940
+
+cons.conf.idx:
+  Count: 41188, Nulls: 0 (0.00%)
+  Mean: -40.5026, Std: 4.6282
+  Min: -50.8000, Max: -26.9000
+  Quartiles: Q25=-42.7000, Median=-41.8000, Q75=-36.4000
+
+euribor3m:
+  Count: 41188, Nulls: 0 (0.00%)
+  Mean: 3.6213, Std: 1.7344
+  Min: 0.6340, Max: 5.0450
+  Quartiles: Q25=1.3440, Median=4.8570, Q75=4.9610
+
+nr.employed:
+  Count: 41188, Nulls: 0 (0.00%)
+  Mean: 5167.0359, Std: 72.2515
+  Min: 4963.6000, Max: 5228.1000
+  Quartiles: Q25=5099.1000, Median=5191.0000, Q75=5228.1000
+
+================================================================================
+ 5. CATEGORICAL COLUMN STATISTICS
+================================================================================
+
+
+job:
+  Count: 41188, Nulls: 0 (0.00%)
+  Unique values: 12
+  Top values:
+    'admin.': 10422 (25.30%)
+    'blue-collar': 9254 (22.47%)
+    'technician': 6743 (16.37%)
+    'services': 3969 (9.64%)
+    'management': 2924 (7.10%)
+    'retired': 1720 (4.18%)
+    'entrepreneur': 1456 (3.54%)
+    'self-employed': 1421 (3.45%)
+    'housemaid': 1060 (2.57%)
+    'unemployed': 1014 (2.46%)
+
+marital:
+  Count: 41188, Nulls: 0 (0.00%)
+  Unique values: 4
+  Top values:
+    'married': 24928 (60.52%)
+    'single': 11568 (28.09%)
+    'divorced': 4612 (11.20%)
+    'unknown': 80 (0.19%)
+
+education:
+  Count: 41188, Nulls: 0 (0.00%)
+  Unique values: 8
+  Top values:
+    'university.degree': 12168 (29.54%)
+    'high.school': 9515 (23.10%)
+    'basic.9y': 6045 (14.68%)
+    'professional.course': 5243 (12.73%)
+    'basic.4y': 4176 (10.14%)
+    'basic.6y': 2292 (5.56%)
+    'unknown': 1731 (4.20%)
+    'illiterate': 18 (0.04%)
+
+default:
+  Count: 41188, Nulls: 0 (0.00%)
+  Unique values: 3
+  Top values:
+    'no': 32588 (79.12%)
+    'unknown': 8597 (20.87%)
+    'yes': 3 (0.01%)
+
+housing:
+  Count: 41188, Nulls: 0 (0.00%)
+  Unique values: 3
+  Top values:
+    'yes': 21576 (52.38%)
+    'no': 18622 (45.21%)
+    'unknown': 990 (2.40%)
+
+loan:
+  Count: 41188, Nulls: 0 (0.00%)
+  Unique values: 3
+  Top values:
+    'no': 33950 (82.43%)
+    'yes': 6248 (15.17%)
+    'unknown': 990 (2.40%)
+
+contact:
+  Count: 41188, Nulls: 0 (0.00%)
+  Unique values: 2
+  Top values:
+    'cellular': 26144 (63.47%)
+    'telephone': 15044 (36.53%)
+
+month:
+  Count: 41188, Nulls: 0 (0.00%)
+  Unique values: 10
+  Top values:
+    'may': 13769 (33.43%)
+    'jul': 7174 (17.42%)
+    'aug': 6178 (15.00%)
+    'jun': 5318 (12.91%)
+    'nov': 4101 (9.96%)
+    'apr': 2632 (6.39%)
+    'oct': 718 (1.74%)
+    'sep': 570 (1.38%)
+    'mar': 546 (1.33%)
+    'dec': 182 (0.44%)
+
+day_of_week:
+  Count: 41188, Nulls: 0 (0.00%)
+  Unique values: 5
+  Top values:
+    'thu': 8623 (20.94%)
+    'mon': 8514 (20.67%)
+    'wed': 8134 (19.75%)
+    'tue': 8090 (19.64%)
+    'fri': 7827 (19.00%)
+
+poutcome:
+  Count: 41188, Nulls: 0 (0.00%)
+  Unique values: 3
+  Top values:
+    'nonexistent': 35563 (86.34%)
+    'failure': 4252 (10.32%)
+    'success': 1373 (3.33%)
+
+y:
+  Count: 41188, Nulls: 0 (0.00%)
+  Unique values: 2
+  Top values:
+    'no': 36548 (88.73%)
+    'yes': 4640 (11.27%)
+
+================================================================================
+ 6. POTENTIAL TARGET COLUMNS (Low Cardinality: 2-10 unique values)
+================================================================================
+
+
+marital (4 unique values):
+  'married': 24928 (60.52%)
+  'single': 11568 (28.09%)
+  'divorced': 4612 (11.20%)
+  'unknown': 80 (0.19%)
+
+education (8 unique values):
+  'university.degree': 12168 (29.54%)
+  'high.school': 9515 (23.10%)
+  'basic.9y': 6045 (14.68%)
+  'professional.course': 5243 (12.73%)
+  'basic.4y': 4176 (10.14%)
+  'basic.6y': 2292 (5.56%)
+  'unknown': 1731 (4.20%)
+  'illiterate': 18 (0.04%)
+
+default (3 unique values):
+  'no': 32588 (79.12%)
+  'unknown': 8597 (20.87%)
+  'yes': 3 (0.01%)
+
+housing (3 unique values):
+  'yes': 21576 (52.38%)
+  'no': 18622 (45.21%)
+  'unknown': 990 (2.40%)
+
+loan (3 unique values):
+  'no': 33950 (82.43%)
+  'yes': 6248 (15.17%)
+  'unknown': 990 (2.40%)
+
+contact (2 unique values):
+  'cellular': 26144 (63.47%)
+  'telephone': 15044 (36.53%)
+
+month (10 unique values):
+  'may': 13769 (33.43%)
+  'jul': 7174 (17.42%)
+  'aug': 6178 (15.00%)
+  'jun': 5318 (12.91%)
+  'nov': 4101 (9.96%)
+  'apr': 2632 (6.39%)
+  'oct': 718 (1.74%)
+  'sep': 570 (1.38%)
+  'mar': 546 (1.33%)
+  'dec': 182 (0.44%)
+
+day_of_week (5 unique values):
+  'thu': 8623 (20.94%)
+  'mon': 8514 (20.67%)
+  'wed': 8134 (19.75%)
+  'tue': 8090 (19.64%)
+  'fri': 7827 (19.00%)
+
+previous (8 unique values):
+  '0': 35563 (86.34%)
+  '1': 4561 (11.07%)
+  '2': 754 (1.83%)
+  '3': 216 (0.52%)
+  '4': 70 (0.17%)
+  '5': 18 (0.04%)
+  '6': 5 (0.01%)
+  '7': 1 (0.00%)
+
+poutcome (3 unique values):
+  'nonexistent': 35563 (86.34%)
+  'failure': 4252 (10.32%)
+  'success': 1373 (3.33%)
+
+emp.var.rate (10 unique values):
+  '1.4': 16234 (39.41%)
+  '-1.8': 9184 (22.30%)
+  '1.1': 7763 (18.85%)
+  '-0.1': 3683 (8.94%)
+  '-2.9': 1663 (4.04%)
+  '-3.4': 1071 (2.60%)
+  '-1.7': 773 (1.88%)
+  '-1.1': 635 (1.54%)
+  '-3.0': 172 (0.42%)
+  '-0.2': 10 (0.02%)
+
+y (2 unique values):
+  'no': 36548 (88.73%)
+  'yes': 4640 (11.27%)
+
+================================================================================
+ 7. CORRELATION MATRIX (Numeric Columns)
+================================================================================
+
+Correlation matrix (showing correlations > 0.5 or < -0.5):
+
+  emp.var.rate <-> euribor3m: 0.9722
+  euribor3m <-> nr.employed: 0.9452
+  emp.var.rate <-> nr.employed: 0.9070
+  emp.var.rate <-> cons.price.idx: 0.7753
+  cons.price.idx <-> euribor3m: 0.6882
+  pdays <-> previous: -0.5875
+  cons.price.idx <-> nr.employed: 0.5220
+  previous <-> nr.employed: -0.5013
+
+Full correlation matrix:
+                  age  duration  campaign  pdays  previous  emp.var.rate  cons.price.idx  cons.conf.idx  euribor3m  nr.employed
+age             1.000    -0.001     0.005 -0.034     0.024        -0.000           0.001          0.129      0.011       -0.018
+duration       -0.001     1.000    -0.072 -0.048     0.021        -0.028           0.005         -0.008     -0.033       -0.045
+campaign        0.005    -0.072     1.000  0.053    -0.079         0.151           0.128         -0.014      0.135        0.144
+pdays          -0.034    -0.048     0.053  1.000    -0.588         0.271           0.079         -0.091      0.297        0.373
+previous        0.024     0.021    -0.079 -0.588     1.000        -0.420          -0.203         -0.051     -0.454       -0.501
+emp.var.rate   -0.000    -0.028     0.151  0.271    -0.420         1.000           0.775          0.196      0.972        0.907
+cons.price.idx  0.001     0.005     0.128  0.079    -0.203         0.775           1.000          0.059      0.688        0.522
+cons.conf.idx   0.129    -0.008    -0.014 -0.091    -0.051         0.196           0.059          1.000      0.278        0.101
+euribor3m       0.011    -0.033     0.135  0.297    -0.454         0.972           0.688          0.278      1.000        0.945
+nr.employed    -0.018    -0.045     0.144  0.373    -0.501         0.907           0.522          0.101      0.945        1.000
+
+================================================================================
+ 8. SAMPLE ROWS
+================================================================================
+
+First 5 rows:
+   age        job  marital    education  default housing loan    contact month day_of_week  duration  campaign  pdays  previous     poutcome  emp.var.rate  cons.price.idx  cons.conf.idx  euribor3m  nr.employed   y
+0   56  housemaid  married     basic.4y       no      no   no  telephone   may         mon       261         1    999         0  nonexistent           1.1          93.994          -36.4      4.857       5191.0  no
+1   57   services  married  high.school  unknown      no   no  telephone   may         mon       149         1    999         0  nonexistent           1.1          93.994          -36.4      4.857       5191.0  no
+2   37   services  married  high.school       no     yes   no  telephone   may         mon       226         1    999         0  nonexistent           1.1          93.994          -36.4      4.857       5191.0  no
+3   40     admin.  married     basic.6y       no      no   no  telephone   may         mon       151         1    999         0  nonexistent           1.1          93.994          -36.4      4.857       5191.0  no
+4   56   services  married  high.school       no      no  yes  telephone   may         mon       307         1    999         0  nonexistent           1.1          93.994          -36.4      4.857       5191.0  no
+
+Last 5 rows:
+       age          job  marital            education default housing loan   contact month day_of_week  duration  campaign  pdays  previous     poutcome  emp.var.rate  cons.price.idx  cons.conf.idx  euribor3m  nr.employed    y
+41183   73      retired  married  professional.course      no     yes   no  cellular   nov         fri       334         1    999         0  nonexistent          -1.1          94.767          -50.8      1.028       4963.6  yes
+41184   46  blue-collar  married  professional.course      no      no   no  cellular   nov         fri       383         1    999         0  nonexistent          -1.1          94.767          -50.8      1.028       4963.6   no
+41185   56      retired  married    university.degree      no     yes   no  cellular   nov         fri       189         2    999         0  nonexistent          -1.1          94.767          -50.8      1.028       4963.6   no
+41186   44   technician  married  professional.course      no      no   no  cellular   nov         fri       442         1    999         0  nonexistent          -1.1          94.767          -50.8      1.028       4963.6  yes
+41187   74      retired  married  professional.course      no     yes   no  cellular   nov         fri       239         3    999         1      failure          -1.1          94.767          -50.8      1.028       4963.6   no
+
+================================================================================
+ 9. SUMMARY FOR ML PIPELINE
+================================================================================
+
+Total samples: 41188
+Total features: 21
+Numeric features: 10
+Categorical features: 11
+
+Likely target column(s):
+  marital (multi-class: 4 classes)
+  education (multi-class: 8 classes)
+  default (multi-class: 3 classes)
+  housing (multi-class: 3 classes)
+  loan (multi-class: 3 classes)
+  contact (binary classification)
+  month (multi-class: 10 classes)
+  day_of_week (multi-class: 5 classes)
+  previous (multi-class: 8 classes)
+  poutcome (multi-class: 3 classes)
+  emp.var.rate (multi-class: 10 classes)
+  y (binary classification)
+
+================================================================================
+ END OF DATA PROFILE
+================================================================================

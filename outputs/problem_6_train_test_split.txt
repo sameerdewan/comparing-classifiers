@@ -1,0 +1,28 @@
+PROBLEM 6: Train/Test Split
+=====================================
+
+CODE:
+    X_train, X_test, y_train, y_test = train_test_split(
+        X, y, test_size=0.2, random_state=42, stratify=y
+    )
+
+SPLIT SIZES:
+- Training: 32,950 samples (80.0%)
+- Test: 8,238 samples (20.0%)
+
+CLASS DISTRIBUTION CHECK:
+- Original: 11.27% positive class
+- Training: 11.27% positive class  
+- Test: 11.26% positive class
+
+STRATIFICATION VERIFICATION:
+- Stratification error: 0.0001%
+- Status: SUCCESS - distributions match
+
+TRAINING SET:
+- Class 0: 29238
+- Class 1: 3712
+
+TEST SET:
+- Class 0: 7310
+- Class 1: 928

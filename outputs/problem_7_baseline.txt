@@ -1,0 +1,26 @@
+PROBLEM 7: A Baseline Model
+=====================================
+
+BASELINE MODEL: DummyClassifier(strategy='most_frequent')
+
+BASELINE PERFORMANCE:
+- Training Accuracy: 0.8873
+- Test Accuracy: 0.8874
+
+WHAT BASELINE DOES:
+- Predicts: [0, 0, 0, 0, 0] (always 0)
+- This equals always predicting 'no'
+
+DATA-DERIVED OBSERVATIONS:
+- Baseline always predicts 'no' (majority class)
+- This achieves 88.74% accuracy by doing nothing useful
+- WARNING: Baseline >80% means accuracy is NOT a good metric
+- A model with 90% accuracy is only 1.3% better than guessing
+
+IMBALANCE CONTEXT:
+- Class ratio: 7.9:1
+- Majority class %: 88.74%
+
+METRIC RECOMMENDATION: F1-score
+- Any useful model must beat 88.74% baseline
+- Better metrics for this data: F1, Precision, Recall, ROC-AUC

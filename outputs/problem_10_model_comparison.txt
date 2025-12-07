@@ -1,0 +1,25 @@
+PROBLEM 10: Model Comparisons
+=====================================
+
+MODELS COMPARED:
+- Logistic Regression (max_iter=1000)
+- KNN (n_neighbors=5, default)
+- Decision Tree (no max_depth, default)
+- SVM (RBF kernel, default)
+
+COMPARISON TABLE:
+              Model  Train Time (s)  Train Accuracy  Test Accuracy  Overfit Gap  vs Baseline
+Logistic Regression          0.0367          0.8998         0.9014      -0.0016       0.0141
+                KNN          0.0034          0.9134         0.8940       0.0194       0.0067
+      Decision Tree          0.1135          0.9954         0.8412       0.1542      -0.0461
+                SVM         19.1184          0.9048         0.9037       0.0011       0.0164
+
+BASELINE REFERENCE: 0.8874
+
+DATA-DERIVED OBSERVATIONS:
+- Best test accuracy: SVM (0.9037)
+- Worst test accuracy: Decision Tree (0.8412)
+- Fastest: KNN (0.0034s)
+- Slowest: SVM (19.1184s)
+- OVERFITTING: Decision Tree has 15.4% train-test gap
+- BELOW BASELINE: ['Decision Tree']
